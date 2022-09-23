@@ -13,7 +13,8 @@ struct people
 };
 int main(void)
 {
-	struct people a = { "È«±æµ¿", 30, "È¸»ç¿ø", 3000000 };
+	struct people a = { "í™ê¸¸ë™", 30, "íšŒì‚¬ì›", 3000000 };
+	cout << "ì›”ê¸‰ì€ " << a.pay << "ì…ë‹ˆë‹¤." << endl;
 	a.calc_pay();
-	cout << "½Ç ¼ö·É¾×Àº " << a.pay << "ÀÔ´Ï´Ù." << endl;
+	cout << "ì‹¤ ìˆ˜ë ¹ì•¡ì€ " << a.pay << "ì…ë‹ˆë‹¤." << endl;
 }
