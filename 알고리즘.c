@@ -17,7 +17,7 @@ int main(void) {
 	for (int i = 0; i < DATACOUNT; i++) {
 		int temp;
 		fscanf_s(fp, "%d", &temp);
-		if (temp == 2839004)
+		if (temp == 965789) // 1076초 5916875, 1728초 6896383, 770초 965789
 			break;
 	}
 	stop = clock();
