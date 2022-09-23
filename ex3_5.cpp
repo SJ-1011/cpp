@@ -13,15 +13,15 @@ public:
 	void st_msg()
 	{
 		if (distance >= 80000)
-			cout << car_num << "ÀÇ Å¸ÀÌ¹Ö º§Æ® ±³Ã¼ ´ë»óÀÔ´Ï´Ù.\n";
+			cout << car_num << "ì˜ íƒ€ì´ë° ë²¨íŠ¸ êµì²´ ëŒ€ìƒì…ë‹ˆë‹¤.\n";
 		else
-			cout << car_num << "ÀÇ ±³Ã¼´ë»óÀÌ ¾Æ´Õ´Ï´Ù.\n";
+			cout << car_num << "ì˜ êµì²´ëŒ€ìƒì´ ì•„ë‹™ë‹ˆë‹¤.\n";
 	}
 	void car_reg() {
-		if (atol(car_num) >= 1 && atol(car_num) <= 10)
-			cout << "¼­¿ï µî·Ï Â÷·®ÀÔ´Ï´Ù.\n";
+		if (atol(car_num) >= 1 && atol(car_num) <= 10)     // atol -> ë¬¸ìë¥¼ longíƒ€ì…ìœ¼ë¡œ ë³€ê²½
+			cout << "ì„œìš¸ ë“±ë¡ ì°¨ëŸ‰ì…ë‹ˆë‹¤.\n";
 		else if (atol(car_num) >= 11 && atol(car_num) <= 20)
-			cout << "°æ±âµµ µî·Ï Â÷·®ÀÔ´Ï´Ù.\n";
+			cout << "ê²½ê¸°ë„ ë“±ë¡ ì°¨ëŸ‰ì…ë‹ˆë‹¤.\n";
 	}
 
 };
@@ -29,8 +29,8 @@ public:
 int main()
 {
 	car_info car1;
-	strcpy_s(car1.car_name, "Á¦³×½Ã½º");
-	strcpy_s(car1.car_num, "33³ª 1234");
+	strcpy_s(car1.car_name, "ì œë„¤ì‹œìŠ¤");
+	strcpy_s(car1.car_num, "33ë‚˜ 1234");
 	car1.distance = 75000;
 	car1.st_msg();
 	car_info car2;
